@@ -1,0 +1,31 @@
+{
+  "name": "voting-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "9.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^4.13.12",
+    "validator": "^9.4.1"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^5.1.1",
+    "nodemon": "^1.17.3",
+    "supertest": "^3.0.0"
+  }
+}
