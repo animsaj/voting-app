@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Router } from 'react-router-dom';
+import history from './history'
+import 'semantic-ui-css/semantic.min.css';
 
-const title = 'My Minimal React Webpack Babel Setup';
+import App from './components/App';
 
 ReactDOM.render(
-    <div>{title}</div>,
+    <Router history={history}>
+        <App />
+    </Router>,
     document.getElementById('app')
 );
